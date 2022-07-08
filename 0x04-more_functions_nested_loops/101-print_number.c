@@ -6,14 +6,12 @@
  * Description: Can only use _putchar to print.
  */
 void print_number(int n)
-{
-int c; /* boolean check */
-num = n;
+
 /* negatives */
-if (num < 0)
+if (n < 0)
 {
-num *= -1;
 _putchar('-');
+n = -n
 }
 /* count up */
 m = 1;
