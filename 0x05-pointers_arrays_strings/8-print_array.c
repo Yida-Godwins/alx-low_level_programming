@@ -13,7 +13,7 @@ int r;
 for (r = 0; r < s; r = r + 1)
 {
 printf("%d", b[r]);
-if (r != (r - 1))
+if (r != (s - 1))
 {
 printf(", ");
 }
