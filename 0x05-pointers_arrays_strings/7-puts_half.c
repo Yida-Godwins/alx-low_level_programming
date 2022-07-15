@@ -21,7 +21,7 @@ else
 {
 q = g / 2;
 }
-for (; q < q; q++)
+for (; q < g; q++)
 {
 _putchar(str[q]);
 }
