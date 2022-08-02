@@ -13,9 +13,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i, lenN, leno;
-	
 	struct dog *n_dog = NULL;
-	
 	lenN = 0;
 	while (name[lenN] != '\0')
 		lenN++;
@@ -49,4 +47,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 	       n_dog->owner[i] = owner[i];
 	n_dog->age = age;
 	return (n_dog);
-}	
+}
