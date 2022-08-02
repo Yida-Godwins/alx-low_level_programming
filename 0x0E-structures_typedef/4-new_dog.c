@@ -13,15 +13,16 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i, lenN, leno;
-	
+
 	struct dog *n_dog = NULL;
-	
+
 	lenN = 0;
 	while (name[lenN] != '\0')
 		lenN++;
 	leno = 0;
 	while (owner[leno] != '\0')
 		leno++;
+
 	n_dog = malloc(sizeof(struct dog));
 	if (n_dog == NULL)
 	{
