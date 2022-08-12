@@ -5,23 +5,19 @@
  * _strcat - Concatenates two strings
  * @dest: The destination input
  * @src: pointer to source input
- * Return: A pointer to the resulting string @dest
+ * Return: A pointer to the resulting string
  */
-
 char *_strcat(char *dest, char *src)
+
 {
-int c, c2;
-c = 0,
-/*find the size of dest array*/
-while (dest[c])
+int  i, j;
+i = j = 0;
+while (*(dest + i))
+i++;
+while ((*(dest + i) = *(src + j)))
 {
-c++;
-}
-/*iterate through each src array value without the null byte*/
-for (c2 = 0; src[c2]; c2++)
-/*append src[c2] to dest[c] while ovewritting the null byte in dest*/
-{
-dest[c++] = src[c2];
+i++;
+j++;
 }
 return (dest);
 }
