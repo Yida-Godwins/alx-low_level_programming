@@ -23,7 +23,7 @@ if (copy == NULL)
 return (-1);
 if (index == 0)
 {
-head = (*head)->next;
+*head = (*head)->next;
 free(copy);
 return (1);
 }
